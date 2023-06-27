@@ -29,9 +29,7 @@ jobs:
         run: |
           cd ./target
           java -jar -Xms1g -Xmx7g ./*.jar
-      - name: 创建文件夹
-        run: mkdir -p /home/runner/work/
-        
+          
       - name: 开始上传
         uses: actions/upload-artifact@v3
         with:
