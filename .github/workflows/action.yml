@@ -30,9 +30,10 @@ jobs:
           cd ./target
           java -jar -Xms1g -Xmx7g ./*.jar
       - name: 创建文件夹
-        run: mkdir -p /home/runner/work/finder
+        run: mkdir -p /home/runner/work/
+        
       - name: 开始上传
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v3
         with:
           # Artifact name
           name: finder-result
